@@ -34,7 +34,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: #9333ea; /* violeta, según el diseño */
+  background-color: #DD71C6; /* violeta, según el diseño */
   border-radius: 2px;
   left: 0;
   transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
