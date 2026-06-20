@@ -17,7 +17,7 @@
   width: auto;
 }
 
-/* --- Botón burger --- */
+/* --- Burger Button --- */
 .burger-btn {
   background: none;
   border: none;
@@ -34,7 +34,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: #DD71C6; /* violeta, según el diseño */
+  background-color: #DD71C6; 
   border-radius: 2px;
   left: 0;
   transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
@@ -44,7 +44,6 @@
 .burger-line:nth-child(2) { top: 50%; transform: translateY(-50%); }
 .burger-line:nth-child(3) { top: 100%; transform: translateY(-100%); }
 
-/* Animación a X cuando está abierto */
 .burger-btn[aria-expanded="true"] .burger-line:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
@@ -59,7 +58,7 @@
   transform: translateY(-50%) rotate(-45deg);
 }
 
-/* --- Menú de navegación --- */
+/* --- nav menu --- */
 .nav-menu {
   position: fixed;
   top: 0;
@@ -82,18 +81,43 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  list-style-type: none;
 }
 
 .nav-menu a {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
   color: #333;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
 
-/* --- Desktop: ocultar burger, mostrar menú horizontal --- */
+.hero .text-hero .short-description{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+}
+.hero{
+  text-align:center;
+  max-width:192px;
+  margin:0 auto
+
+}
+.hero .text-hero .spots-text{
+  font-size: 12px;
+  font-weight: 400;
+  font-style: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.outstanding-purple{
+  color:#DD71C6;
+}
+
 @media (min-width: 1024px) {
   .burger-btn {
     display: none;
+  }
+  .header .container{
+    padding-right: 200px;
   }
 
   .nav-menu {
@@ -102,10 +126,19 @@
     height: auto;
     box-shadow: none;
     padding: 0;
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .nav-menu ul {
     flex-direction: row;
-    gap: 2rem;
+    gap: 36px;
+    list-style-type: none;
+  }
+  .logo img {
+    height: 62px;
+    width: 138px;
   }
 }
