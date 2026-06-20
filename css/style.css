@@ -212,7 +212,8 @@
     display: none;
   }
   .hero .countdown-card{
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   
 }
