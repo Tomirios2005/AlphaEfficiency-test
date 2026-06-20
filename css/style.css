@@ -2,6 +2,10 @@
   position: relative;
   z-index: 100;
 }
+*{
+  font-family: 'Montserrat';
+
+}
 
 .header .container {
   display: flex;
@@ -95,12 +99,19 @@
 .hero .text-hero .short-description{
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
+  font-size: 30px;
 }
 .hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align:center;
-  max-width:192px;
+  align-items: center;
   margin:0 auto
 
+}
+.hero .text-hero{
+  max-width: 192px;
 }
 .hero .text-hero .spots-text{
   font-size: 12px;
@@ -111,14 +122,55 @@
 .outstanding-purple{
   color:#DD71C6;
 }
+.hero .countdown-card p{
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.hero .countdown-card{
+  margin-top: 41px;
+  width: 281px;
+  height: auto; 
+  border-radius: 30px;
+  
+  padding: 26px 36px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  
+  background: linear-gradient(180deg, #FFFFFF 51%, #FFFFFF 49%);
+
+  
+  backdrop-filter: blur(40px); 
+  -webkit-backdrop-filter: blur(40px);
+  
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+  
+}
+.hero .countdown-card .time-remaining{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hero .countdown-card .time-remaining .label{
+    color: #0083D3;
+    font-size: 8px;
+    font-weight: 500;
+  }
+  .hero .countdown-card .time-remaining .number{
+    font-weight: 500;
+    font-size: 18px;
+
+  }
+  
 
 @media (min-width: 1024px) {
   .burger-btn {
     display: none;
   }
-  .header .container{
-    padding-right: 200px;
-  }
+  
+
 
   .nav-menu {
     position: static;
@@ -141,4 +193,26 @@
     height: 62px;
     width: 138px;
   }
+  .hero{
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    max-width: 100%;
+    gap: 74px;
+  }
+  .hero .text-hero{
+    max-width: 100%;
+  }
+  .hero .text-hero .short-description{
+    max-width: 437px;
+    font-size: 45px;
+    text-align: left;
+  }
+  .hero .text-hero .spots-text{
+    display: none;
+  }
+  .hero .countdown-card{
+    align-items: flex-start;
+  }
+  
 }

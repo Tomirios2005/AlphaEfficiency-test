@@ -13,8 +13,24 @@ function updateCountdown() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.querySelector("#countdown").innerHTML = 
-    `${days}d ${hours}h ${minutes}m ${seconds}s`
+  document.querySelector("#countdown").innerHTML = `
+  <div class="time-block">
+    <span class="label">Days</span>
+    <div class="number">${days}</div>
+  </div>
+  <div class="time-block">
+    <span class="label">Hours</span>
+    <div class="number">${hours}</div>
+  </div>
+  <div class="time-block">
+    <span class="label">Minutes</span>
+    <div class="number">${minutes}</div>
+  </div>
+  <div class="time-block">
+    <span class="label">Seconds</span>
+    <div class="number">${seconds}</div>
+  </div>
+`;
 }
 //calls the function every second to render the numbers
 const timer = setInterval(updateCountdown, 1000);
