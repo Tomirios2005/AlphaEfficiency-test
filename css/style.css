@@ -171,7 +171,7 @@
   }
   .page-wrapper {
   position: relative;
-  overflow: hidden; /* evita que la forma genere scroll horizontal al desbordarse */
+  overflow:hidden;
 }
 
 .yellow-shape {
@@ -179,10 +179,13 @@
   top: 0; /* ajustá: dónde arranca verticalmente, debajo del header */
   right: -50%; /* la hace "sangrar" fuera del borde derecho */
   width: 100%; /* ancho de la forma */
-  height: 768px; /* alto — ajustalo a cuánto baja en tu diseño */
+  height: 100%;
   background-color: #FFC700; /* el amarillo */
   border-radius: 60px 0 0 0; /* solo redondea la esquina superior-izquierda */
   z-index: -1; /* la manda detrás de .hero */
+}
+.hero{
+  padding-bottom: 42px;
 }
 .limited-spots-mobile p{
   font-weight: 400;
@@ -200,10 +203,75 @@
   font-size: 16px;
   width: 215px;
   height: 40px;
+  margin-top: 27px;
 }
 .limited-spots-desktop{
   display: none;
 }
+section.experience{
+  background-color: rgba(221, 113, 198, 1);
+  height: 508px;
+}
+section.experience .cards{
+  display: grid;
+  position: relative;
+  justify-items:center;
+  z-index: 1;
+  grid-template-columns: 1fr 1fr;
+  gap: 23px;
+  align-items: center;
+  text-align: center;
+  padding: 51px 47px 47px 28px;
+}
+section.experience .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 134px;
+  height: 157px;
+  border-radius: 20px;
+  border:none;
+  background: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+section.experience .card .icon{
+  width: 24px;
+  height: 24px;
+}
+section.experience .card .exp-number{
+  font-size: 18px;
+  font-weight: 500;
+
+}
+section.experience .card .plus{
+  color:rgba(196, 196, 196, 1);
+  font-size: 16px;
+  font-weight: 500;
+}
+section.experience .card .exp-text{
+  font-size: 12px;
+  font-weight:400 ;
+  color: rgba(51, 51, 51, 1);
+  max-width: 123px;
+
+
+}
+
+section.experience .yellow{
+  background-color: rgba(255, 217, 0, 1);
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
 @media (min-width: 1024px) {
   .burger-btn {
@@ -308,6 +376,14 @@
     width: 1180px;
     height: 760px;
   }
+  section.experience .cards{
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+  }
   
   
+}
+@media(min-width:820px){
+  /* TODO */
 }
