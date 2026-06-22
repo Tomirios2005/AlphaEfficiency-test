@@ -422,6 +422,72 @@ section.doctors button {
 section.doctors .book-button-desktop {
   display: none;
 }
+section.free-consultation{
+  height: 997px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: rgba(249, 249, 249, 1);
+}
+section.free-consultation .subtitle{
+  max-width:281px ;
+}
+section.free-consultation .cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 27px;
+  gap: 39px;
+}
+section.free-consultation .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 281px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+}
+section.free-consultation .card .subtitle{
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 17px;
+  line-height: 173%;
+
+}
+section.free-consultation .card hr{
+  width: 236px;
+  height: 1px;
+  border: 1px;
+
+}
+section.free-consultation .card hr.blue{
+  background-color: rgba(177, 226, 255, 1);
+}
+section.free-consultation .card hr.purple{
+  background-color: rgba(255, 183, 240, 1);
+}
+.blue{
+  color:rgba(0, 131, 211, 1);
+}
+.purple{
+  color:rgba(221, 113, 198, 1)
+}
+section.free-consultation .card ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+section.free-consultation .card ul li::marker{
+  font-size: 0.5rem;
+    color: rgba(51, 51, 51, 1);
+
+}
+section.free-consultation .card li{
+  font-weight: 400;
+  line-height: 173%;
+  color: rgba(51, 51, 51, 1);
+}
 
 @media (min-width: 1024px) {
   .burger-btn {
