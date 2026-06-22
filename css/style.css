@@ -594,7 +594,9 @@ section.doctors button{
   .mobile{
     display: none;
   }
-  
+  .desktop{
+    display: block;
+  }
  
  
 
