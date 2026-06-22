@@ -25,8 +25,8 @@ html {
 }
 
 .logo img {
-  height: 40px;
-  width: auto;
+  height: auto;
+  width: 88.91px;
 }
 
 /* --- Burger Button --- */
@@ -252,7 +252,7 @@ html {
 
 section.experience {
   background-color: rgba(221, 113, 198, 1);
-  height: 508px;
+  min-height: 508px;
 }
 
 section.experience .cards {
@@ -375,6 +375,7 @@ section.clients h3 {
 
 section.doctors {
   height: 1286px;
+  height: auto;
 }
 
 section.doctors div {
@@ -444,6 +445,7 @@ section.free-consultation .card{
   flex-direction: column;
   align-items: center;
   width: 281px;
+  min-height: 295px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 20px;
 }
@@ -488,6 +490,156 @@ section.free-consultation .card li{
   line-height: 173%;
   color: rgba(51, 51, 51, 1);
 }
+section.free-consultation .book-button-mobile{
+  margin-top: 14px;
+}
+/*faq*/
+/* =============================================
+   FAQ Section — A Better Weigh
+   Mobile-first stylesheet
+   ============================================= */
+
+
+/* ── Section wrapper ── */
+
+
+.faq__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* max-width: 720px; */
+ 
+}
+
+/* ── List reset ── */
+.faq__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* 12px entre cada label */
+  max-width: 308px;
+}
+
+/* ── Item ── */
+.faq__item {
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(249, 249, 249, 1);
+  /* subtle shadow to lift cards off background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.faq__item:has(.faq__trigger[aria-expanded="true"]) {
+  box-shadow: 0 4px 16px rgba(221, 113, 198, 0.12);
+}
+
+/* ── Trigger button ── */
+.faq__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* 47px left margin as specified */
+  padding: 18px 20px 18px 47px;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+}
+
+.faq__trigger:focus-visible {
+  outline: 2px solid rgba(221, 113, 198, 0.6);
+  outline-offset: -2px;
+  border-radius: 12px;
+}
+
+/* ── Label text ── */
+.faq__label {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 173%;
+  color: rgba(51, 51, 51, 1);
+  transition: color 0.2s ease;
+}
+
+.faq__trigger[aria-expanded="true"] .faq__label {
+  color: #1a1a1a;
+}
+
+/* ── Arrow icon ── */
+.faq__icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: rgba(221, 113, 198, 1); /* accent pink/violet */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.faq__trigger[aria-expanded="true"] .faq__icon {
+  transform: rotate(180deg);
+}
+
+/* ── Panel (accordion body) ── */
+.faq__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  /* grid trick: inner div must have overflow:hidden */
+}
+
+.faq__panel[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+.faq__panel > p {
+  overflow: hidden;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: #555;
+  padding: 0 20px 0 47px; /* match trigger left padding */
+}
+
+/* Give the paragraph a bottom margin that also animates in */
+.faq__panel[aria-hidden="false"] > p {
+  padding-bottom: 20px;
+}
+
+/* ── Separator line between trigger and open panel ── */
+.faq__item:has(.faq__trigger[aria-expanded="true"]) .faq__trigger {
+  border-bottom: 1px solid rgba(221, 113, 198, 0.15);
+}
+
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .faq__panel,
+  .faq__icon {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1024px) {
   .burger-btn {
@@ -639,6 +791,7 @@ section.free-consultation .card li{
     gap: 100px;
     /*padding of 32px - 799 in total*/
     height: 767px;
+    height: auto;
 
   }
 
@@ -692,6 +845,9 @@ section.free-consultation .card li{
   section.doctors{
     height: 794px;
   }
+  section.doctors .subtitle{
+    margin-top: 89px;
+  }
 
   section.doctors div {
     align-items: center;
@@ -717,10 +873,52 @@ section.free-consultation .card li{
   section.doctors .subtitle{
     margin-bottom: 0;
   }
-  section.doctors img{
-    margin-top: 46.07px;
-    margin-bottom: 0;
+  section.doctors .img-container{
+    margin-top: 50px;
+    height: 333.35px;
+    max-width: 1051px;
+    overflow: hidden;
   }
+  section.doctors img{
+    margin-top: -120px;
+    z-index: -1 ;
+  }
+  section.free-consultation{
+    padding-top:102px ;
+    height: 796px;
+  }
+  section.free-consultation .subtitle{
+    max-width: 100%;
+    margin-top: 0;
+
+  }
+  section.free-consultation .cards{
+    flex-direction: row;
+  }
+  section.free-consultation .card{
+    min-height: 391px;
+    width: 447px;
+
+  }
+  section.free-consultation .card .subtitle{
+    margin-bottom: 39px;
+    font-size: 24px;
+  }
+  section.free-consultation .card li{
+    max-width: 399px;
+  }
+  section.free-consultation .book-button-mobile{
+    margin-top: 88px;
+  }
+  .faq {
+    padding: 80px 0 96px;
+  }
+
+  .faq__list{
+    width: 1138px;
+    max-width: 100%;
+  }
+  
 
 
 
