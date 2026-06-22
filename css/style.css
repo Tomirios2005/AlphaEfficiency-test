@@ -130,7 +130,7 @@ html {
 }
 
 .hero .text-hero {
-  max-width: 192px;
+  max-width: 281px;
 }
 
 .hero .text-hero .spots-text {
@@ -233,6 +233,8 @@ html {
 }
 
 .book-button-mobile {
+  display: flex;
+  align-items: center;
   background-color: rgba(221, 113, 198, 1);
   color: rgba(255, 255, 255, 1);
   border: none;
@@ -241,6 +243,7 @@ html {
   width: 215px;
   height: 40px;
   margin-top: 28px;
+  font-weight: 600;
 }
 
 .limited-spots-desktop {
@@ -315,6 +318,7 @@ section.experience .yellow {
 .btn-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 section.clients {
@@ -364,7 +368,47 @@ section.clients .img-wrapper {
 section.clients h3 {
   margin-bottom: 23px;
 }
+.black{
+  color: rgba(51, 51, 51, 1);
+}
+section.doctors{
+  height: 1286px;
+}
+section.doctors div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
+}
+section.doctors .subtitle{
+  margin-left: 47px;
+  margin-bottom: 22px;
+}
+section.doctors div p{
+  margin-right:47px;
+  margin-left: 47px;
+}
+section.doctors img{
+  width: 100%;
+  height: auto;
+  margin-top: 43px;
+  margin-bottom:62px;
+}
+section.doctors .btn-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.doctors button{
+  text-align: center;
+  justify-content: center;
+}
+.desktop{
+  display: none;
+}
 
 
 @media (min-width: 1024px) {
@@ -464,9 +508,6 @@ section.clients h3 {
     display: none;
   }
 
-  .book-button {
-    display: block;
-  }
 
   .limited-spots-desktop {
     display: block;
@@ -540,8 +581,18 @@ section.clients h3 {
     gap: 20px;
     
   }
-  section.clients .clients-div{
+  section.clients .clients-div {
+    max-width: 491px;
+  }
+  section.clients .clients-div p{
     max-width: 403px;
+    font-size: 16px;
+  }
+  .subtitle{
+    font-size: 32px;
+  }
+  .mobile{
+    display: none;
   }
   
  
