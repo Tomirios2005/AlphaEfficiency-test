@@ -818,6 +818,16 @@ section.free-consultation .book-button-mobile {
     font-size: 12px;
     font-weight: 500;
   }
+  section.experience{
+    min-height: 372px;
+  }
+  section.experience .cards{
+    display: flex;
+    flex-direction: row;
+  }
+  section.experience .cards .card{
+    height: 215px;
+  }
   
 }
 
