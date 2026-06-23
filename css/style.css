@@ -828,6 +828,67 @@ section.free-consultation .book-button-mobile {
   section.experience .cards .card{
     height: 215px;
   }
+  /* ── FAQ ── */
+  .faq {
+    margin-right: 0;
+    align-items: center;
+    padding: 60px 20px;
+  }
+
+  .faq__inner {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .faq__list {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .faq .btn-wrapper {
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  .faq .book-button-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(221, 113, 198, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    width: 215px;
+    height: 40px;
+  }
+  /* ── FOOTER ── */
+  .fat-footer {
+    padding: 50px 40px 26px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-info {
+    grid-column: 1 / 3;
+  }
+
+  .bottom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .footer-copy {
+    text-align: left;
+  }
+
   
 } 
 
