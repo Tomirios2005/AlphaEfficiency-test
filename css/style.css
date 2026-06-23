@@ -423,24 +423,28 @@ section.doctors button {
 section.doctors .book-button-desktop {
   display: none;
 }
-section.free-consultation{
+
+section.free-consultation {
   height: 997px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   background-color: rgba(249, 249, 249, 1);
 }
-section.free-consultation .subtitle{
-  max-width:281px ;
+
+section.free-consultation .subtitle {
+  max-width: 281px;
 }
-section.free-consultation .cards{
+
+section.free-consultation .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 27px;
   gap: 39px;
 }
-section.free-consultation .card{
+
+section.free-consultation .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -449,50 +453,61 @@ section.free-consultation .card{
   background-color: rgba(255, 255, 255, 1);
   border-radius: 20px;
 }
-section.free-consultation .card .subtitle{
+
+section.free-consultation .card .subtitle {
   font-size: 18px;
   margin-top: 12px;
   margin-bottom: 17px;
   line-height: 173%;
 
 }
-section.free-consultation .card hr{
+
+section.free-consultation .card hr {
   width: 236px;
   height: 1px;
   border: 1px;
 
 }
-section.free-consultation .card hr.blue{
+
+section.free-consultation .card hr.blue {
   background-color: rgba(177, 226, 255, 1);
 }
-section.free-consultation .card hr.purple{
+
+section.free-consultation .card hr.purple {
   background-color: rgba(255, 183, 240, 1);
 }
-.blue{
-  color:rgba(0, 131, 211, 1);
+
+.blue {
+  color: rgba(0, 131, 211, 1);
 }
-.purple{
-  color:rgba(221, 113, 198, 1)
+
+.purple {
+  color: rgba(221, 113, 198, 1)
 }
-section.free-consultation .card ul{
+
+section.free-consultation .card ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-left: 20px;
 }
-section.free-consultation .card ul li::marker{
+
+section.free-consultation .card ul li::marker {
   font-size: 0.5rem;
-    color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 1);
 
 }
-section.free-consultation .card li{
+
+section.free-consultation .card li {
   font-weight: 400;
   line-height: 173%;
   color: rgba(51, 51, 51, 1);
 }
-section.free-consultation .book-button-mobile{
+
+section.free-consultation .book-button-mobile {
   margin-top: 14px;
 }
+
 /*faq*/
 /* =============================================
    FAQ Section — A Better Weigh
@@ -502,15 +517,17 @@ section.free-consultation .book-button-mobile{
 
 /* ── Section wrapper ── */
 
-
-.faq__inner {
+.faq {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  /* max-width: 720px; */
- 
+}
+
+.faq__inner {
+
+  width: 308px;
+  max-width: 100%;
+
 }
 
 /* ── List reset ── */
@@ -518,7 +535,8 @@ section.free-consultation .book-button-mobile{
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px; /* 12px entre cada label */
+  gap: 12px;
+  /* 12px entre cada label */
   max-width: 308px;
 }
 
@@ -576,7 +594,8 @@ section.free-consultation .book-button-mobile{
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  color: rgba(221, 113, 198, 1); /* accent pink/violet */
+  color: rgba(221, 113, 198, 1);
+  /* accent pink/violet */
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
@@ -604,16 +623,17 @@ section.free-consultation .book-button-mobile{
   grid-template-rows: 1fr;
 }
 
-.faq__panel > p {
+.faq__panel>p {
   overflow: hidden;
   font-size: 0.875rem;
   line-height: 1.65;
   color: #555;
-  padding: 0 20px 0 47px; /* match trigger left padding */
+  padding: 0 20px 0 47px;
+  /* match trigger left padding */
 }
 
 /* Give the paragraph a bottom margin that also animates in */
-.faq__panel[aria-hidden="false"] > p {
+.faq__panel[aria-hidden="false"]>p {
   padding-bottom: 20px;
 }
 
@@ -625,11 +645,75 @@ section.free-consultation .book-button-mobile{
 
 /* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
+
   .faq__panel,
   .faq__icon {
     transition: none;
   }
 }
+
+
+/* MOBILE */
+
+.fat-footer {
+  background-color: #f9f9f9;
+  padding-top: 65px;
+  padding-left: 20px;
+  padding-right: 55px;
+  padding-bottom: 26px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 38px; */
+}
+
+.footer-info img {
+  width: 138px;
+  margin-bottom: 20px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-item {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-item strong {
+  color: #333;
+}
+
+.fat-footer ul {
+  padding-left: 0;
+}
+
+.fat-footer li {
+  list-style: none;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.fat-footer a {
+  text-decoration: none;
+  color: rgba(51, 51, 51, 1);
+}
+.fat-footer p{
+  font-weight: 400;
+}
+.fat-footer strong{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
 
 
 
@@ -842,10 +926,12 @@ section.free-consultation .book-button-mobile{
   .desktop {
     display: block;
   }
-  section.doctors{
+
+  section.doctors {
     height: 794px;
   }
-  section.doctors .subtitle{
+
+  section.doctors .subtitle {
     margin-top: 89px;
   }
 
@@ -864,61 +950,116 @@ section.free-consultation .book-button-mobile{
     align-items: center;
     margin-top: 34px;
   }
-  section.doctors p{
+
+  section.doctors p {
     max-width: 1140px;
     margin-top: 20px;
     margin-bottom: 5px;
-    
+
   }
-  section.doctors .subtitle{
+
+  section.doctors .subtitle {
     margin-bottom: 0;
   }
-  section.doctors .img-container{
+
+  section.doctors .img-container {
     margin-top: 50px;
     height: 333.35px;
     max-width: 1051px;
     overflow: hidden;
   }
-  section.doctors img{
+
+  section.doctors img {
     margin-top: -120px;
-    z-index: -1 ;
+    z-index: -1;
   }
-  section.free-consultation{
-    padding-top:102px ;
+
+  section.free-consultation {
+    padding-top: 102px;
     height: 796px;
   }
-  section.free-consultation .subtitle{
+
+  section.free-consultation .subtitle {
     max-width: 100%;
     margin-top: 0;
 
   }
-  section.free-consultation .cards{
+
+  section.free-consultation .cards {
     flex-direction: row;
   }
-  section.free-consultation .card{
+
+  section.free-consultation .card {
     min-height: 391px;
     width: 447px;
 
   }
-  section.free-consultation .card .subtitle{
+
+  section.free-consultation .card .subtitle {
     margin-bottom: 39px;
     font-size: 24px;
   }
-  section.free-consultation .card li{
+
+  section.free-consultation .card li {
     max-width: 399px;
   }
-  section.free-consultation .book-button-mobile{
+
+  section.free-consultation .book-button-mobile {
     margin-top: 88px;
   }
+
   .faq {
     padding: 80px 0 96px;
+    align-items: center;
   }
 
-  .faq__list{
+  .faq__inner {
+    max-width: 1004px;
+    width: 100%;
+    /* padding-left:392px; */
+
+  }
+
+  .faq__list {
+    padding-left: 0;
     width: 1138px;
     max-width: 100%;
   }
-  
+  .footer-container{
+    display: grid;
+        grid-template-columns: 450px 200px 200px;
+        justify-content: center;
+        gap: 100px;
+
+  }
+
+  .footer-info{
+    max-width: 443px;
+  }
+  .contact-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .contact-item div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .bottom-footer{
+    display: grid;
+    grid-template-columns: 450px 200px 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 99px;
+    gap: 42px;
+  }
+  .footer-copy{
+    grid-column: 2/4;
+    text-align: right;
+  }
+
+
 
 
 
