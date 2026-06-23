@@ -725,7 +725,7 @@ section.free-consultation .book-button-mobile {
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .burger-btn {
     display: none;
   }
